@@ -1,12 +1,12 @@
 <!DOCTYPE html> 
 <html>
-      <ul class="nav">
+<div class="hero">
+ <ul class="nav">
       <li class="navL"><a href="#About" class="navLA">About Me</a> </li>
       <li class="navL"><a href="#Skills" class="navLA">Skills</a> </li>
       <li class="navL"><a href="#Fun Stuff" class="navLA">Fun Stuff</a> </li>
       <li class="navL"><a href="#Sample work" class="navLA">Sample Work</a> </li>
  </ul>
-<div class="hero">
     <h1>Sam Krosch</h1>
 </div>
 <div class="toggles"><label for="invert-filter">Background invert filter %</label><input class="invert-filter-toggle" id="invert-filter" type="range" min="-50" max="200" value="20" /><label for="blend-mode">Blend mode filter</label><select class="blend-mode-toggle" id="blend-mode"><option value="overlay">Overlay</option><option value="multiply">Multiply</option><option value="soft-light">Soft-Light</option><option value="screen">Screen</option><option value="hue">Hue</option><option value="darken">Darken</option><option value="lighten">Lighten</option><option value="color">Color</option><option value="luminosity">Luminosity</option><option value="normal">Normal</option></select
@@ -172,8 +172,7 @@ body {
 </style>
       
 <script>
-      // Toggle values
-const rangeSlider = document.getElementById('invert-filter');
+  const rangeSlider = document.getElementById('invert-filter');
 
 const dropdown = document.getElementById('blend-mode')
 
@@ -189,7 +188,7 @@ function updateBlend(e) {
 // Event listeners
 rangeSlider.addEventListener("input", updateFilter)
 
-dropdown.addEventListener("input", updateB
+dropdown.addEventListener("input", updateBlend)
 </script>
 
       </html>
